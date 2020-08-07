@@ -1,3 +1,5 @@
+require 'pry'
+
 class BankAccount
   
   attr_accessor :transfer, :balance, :status
@@ -13,6 +15,7 @@ class BankAccount
   def deposit(amount)
     @balance + amount = @balance
     @balance
+    binding.pry
   end
 
 end
