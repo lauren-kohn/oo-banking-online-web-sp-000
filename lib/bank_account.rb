@@ -6,7 +6,7 @@ class BankAccount
   
   def initialize(name)
     @name = name
-    raise error if BankAccount.name
+    raise TypeError if BankAccount.name
     @balance = 1000 
     @status = "open"
   end
