@@ -1,5 +1,3 @@
-require 'pry'
-
 class Transfer
   
   attr_accessor :transfer, :status, :sender, :receiver, :amount
