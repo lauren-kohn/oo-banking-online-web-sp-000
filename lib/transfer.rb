@@ -22,7 +22,7 @@ class Transfer
   
   def execute_transaction
     binding.pry
-  
+    if sender.status = open and sender.balance > 
   end
   
 end
