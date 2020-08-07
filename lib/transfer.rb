@@ -13,7 +13,6 @@ class Transfer
   end
   
   def valid?
-    #binding.pry
     if self.receiver.valid? && self.sender.valid?
       true 
     else 
