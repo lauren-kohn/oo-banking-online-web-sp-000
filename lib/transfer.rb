@@ -11,7 +11,7 @@ class Transfer
   end
   
   def valid?
-    name.valid?
+    self.valid?
   end
   
 end
