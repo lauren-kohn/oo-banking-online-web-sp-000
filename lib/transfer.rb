@@ -2,7 +2,7 @@ require 'pry'
 
 class Transfer
   
-  attr_accessor :bankaccount, :transfer, :status, :sender, :receiver, :amount
+  attr_accessor :transfer, :status, :sender, :receiver, :amount
   
   def initialize(sender, receiver, amount)
     @transfer = transfer
@@ -14,7 +14,7 @@ class Transfer
   
   def valid?
     binding.pry
-    @bankaccount.valid?
+    bankaccount.valid?
   end
   
 end
