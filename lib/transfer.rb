@@ -14,7 +14,7 @@ class Transfer
   
   def valid?
     binding.pry
-    bankaccount.valid?
+    @bankaccount.valid?
   end
   
 end
