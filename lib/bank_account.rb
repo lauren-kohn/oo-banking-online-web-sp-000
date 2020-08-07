@@ -9,5 +9,10 @@ class BankAccount
     @balance = 1000 
     @status = "open"
   end
+  
+  def deposit(amount)
+    @balance + amount = @balance
+    @balance
+  end
 
 end
