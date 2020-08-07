@@ -6,7 +6,6 @@ class BankAccount
   
   def initialize(name)
     @name = name
-    raise NameError if BankAccount.name != @name
     @balance = 1000 
     @status = "open"
   end
