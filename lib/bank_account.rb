@@ -1,5 +1,3 @@
-require 'pry'
-
 class BankAccount
   
   attr_accessor :transfer, :balance, :status
