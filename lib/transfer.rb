@@ -14,7 +14,11 @@ class Transfer
   
   def valid?
     #binding.pry
-    bankaccount.valid?
+    if self.receiver.valid? && self.sender.valid?
+      true 
+    else 
+      false 
+    end
   end
   
 end
