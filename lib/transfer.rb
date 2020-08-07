@@ -22,7 +22,12 @@ class Transfer
   
   def execute_transaction
     binding.pry
-    if sender.status = open and sender.balance > 
+    if sender.status = "open" && receiver.status == "open" && amount < sender.balance
+      sender.balance = sender.balance - amount
+      receiver.balance = receiver.balance + amount
+      self.status = "complete"
+    elsif sender.status = "open" && receiver.status == "open" && amount > sender.balance
+      ""
   end
   
 end
